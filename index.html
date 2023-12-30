@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatar</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="https://unpkg.com/konva@9.3.0/konva.min.js"></script>
+    <script src="https://cdn.rawgit.com/hammerjs/touchemulator/master/touch-emulator.js"></script>
+    <script src="./assets/js/hammer-konva.js"></script>
+    <script defer src="./assets/js/main.js"></script>
+    <!-- FIXME: remove redundant code -->
+    <!-- LATER: save to local-->
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="app-body">
+        <div class="app-heading">
+          <h1>Ảnh</h1>
+        </div>
+        <!-- TODO: frame options -->
+        <div id="container"></div>
+        <!-- TODO: toolbar (horizontal center, vertical center, reset, image scale range) -->
+        <!-- FIXME: zoom limit -->
+      </div>
+      <div class="app-footer">
+        <button class="btn btn-secondary" id="btn-upload">Tải ảnh lên</button>
+        <button class="btn btn-primary" id="btn-save">Lưu ảnh về máy</button>
+        <input type="file" accept="image/*" id="file" hidden />
+      </div>
+    </div>
+  </body>
+</html>
